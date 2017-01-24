@@ -123,6 +123,5 @@ func _fixed_process(delta):
 	if velocity == Vector2(0,0):
 		self.get_node("Sprite").set_frame(7)
 
-
 func _ready():
 	set_fixed_process(true)
