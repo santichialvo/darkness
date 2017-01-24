@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://assets/sprites/static/Base pack/Tiles/box.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 9.57377, 9.81749 )
+
+[node name="Node" type="Node"]
+
+[node name="box" type="Sprite" parent="."]
+
+transform/pos = Vector2( 32, 32 )
+transform/scale = Vector2( 0.914286, 0.914286 )
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 32, 32 )
+__meta__ = { "_edit_lock_":true }
+
+[node name="StaticBody2D" type="StaticBody2D" parent="box"]
+
+transform/pos = Vector2( -1.5, -1.5 )
+transform/scale = Vector2( 0.953125, 0.953125 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 4, 0, 0, 4.03846, -2.26498e-06, 4.50001 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = { "_edit_lock_":true }
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="box/StaticBody2D"]
+
+transform/pos = Vector2( -2.26498e-06, 4.50001 )
+transform/scale = Vector2( 4, 4.03846 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+__meta__ = { "_edit_lock_":true }
+
+

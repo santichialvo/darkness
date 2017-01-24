@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="16" version="2.1" version_name="Godot Engine v2.1.stable.official">
+	<ext_resource path="res://assets/scripts/player.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://assets/sprites/animated/p1_walk01.tex" type="Texture" index="1"></ext_resource>
+	<ext_resource path="res://assets/sprites/animated/p1_walk02.tex" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://assets/sprites/animated/p1_walk03.tex" type="Texture" index="3"></ext_resource>
+	<ext_resource path="res://assets/sprites/animated/p1_walk04.tex" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://assets/sprites/animated/p1_walk05.tex" type="Texture" index="5"></ext_resource>
+	<ext_resource path="res://assets/sprites/animated/p1_walk06.tex" type="Texture" index="6"></ext_resource>
+	<ext_resource path="res://assets/sprites/animated/p1_walk07.tex" type="Texture" index="7"></ext_resource>
+	<ext_resource path="res://assets/sprites/animated/p1_walk08.tex" type="Texture" index="8"></ext_resource>
+	<ext_resource path="res://assets/sprites/animated/p1_walk09.tex" type="Texture" index="9"></ext_resource>
+	<ext_resource path="res://assets/sprites/animated/p1_walk10.tex" type="Texture" index="10"></ext_resource>
+	<ext_resource path="res://assets/sprites/animated/p1_walk11.tex" type="Texture" index="11"></ext_resource>
+	<ext_resource path="res://tilescene.xml" type="TileSet" index="12"></ext_resource>
+	<resource type="RectangleShape2D" path="local://1">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="extents"> 10, 10 </vector2>
+
+	</resource>
+	<resource type="SpriteFrames" path="local://3">
+		<array name="animations" len="1" shared="false">
+			<dictionary  shared="false">
+				<string> "frames" </string>
+				<array  len="11" shared="false">
+					<resource  external="1">  </resource>
+					<resource  external="2">  </resource>
+					<resource  external="3">  </resource>
+					<resource  external="4">  </resource>
+					<resource  external="5">  </resource>
+					<resource  external="6">  </resource>
+					<resource  external="7">  </resource>
+					<resource  external="8">  </resource>
+					<resource  external="9">  </resource>
+					<resource  external="10">  </resource>
+					<resource  external="11">  </resource>
+				</array>
+				<string> "loop" </string>
+				<bool> True </bool>
+				<string> "name" </string>
+				<string> "walk" </string>
+				<string> "speed" </string>
+				<real> 5 </real>
+			</dictionary>
+		</array>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "names" </string>
+			<string_array  len="73">
+				<string> "Node2D" </string>
+				<string> "transform/pos" </string>
+				<string> "Player" </string>
+				<string> "input/pickable" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
+				<string> "collision/layers" </string>
+				<string> "collision/mask" </string>
+				<string> "mode" </string>
+				<string> "mass" </string>
+				<string> "friction" </string>
+				<string> "bounce" </string>
+				<string> "gravity_scale" </string>
+				<string> "custom_integrator" </string>
+				<string> "continuous_cd" </string>
+				<string> "contacts_reported" </string>
+				<string> "contact_monitor" </string>
+				<string> "sleeping" </string>
+				<string> "can_sleep" </string>
+				<string> "velocity/linear" </string>
+				<string> "velocity/angular" </string>
+				<string> "damp_override/linear" </string>
+				<string> "damp_override/angular" </string>
+				<string> "script/script" </string>
+				<string> "__meta__" </string>
+				<string> "RigidBody2D" </string>
+				<string> "Sprite" </string>
+				<string> "frames" </string>
+				<string> "animation" </string>
+				<string> "modulate" </string>
+				<string> "AnimatedSprite" </string>
+				<string> "CollisionShape2D" </string>
+				<string> "transform/scale" </string>
+				<string> "shape" </string>
+				<string> "trigger" </string>
+				<string> "_update_shape_index" </string>
+				<string> "Camera2D" </string>
+				<string> "anchor_mode" </string>
+				<string> "rotating" </string>
+				<string> "current" </string>
+				<string> "zoom" </string>
+				<string> "limit/left" </string>
+				<string> "limit/top" </string>
+				<string> "limit/right" </string>
+				<string> "limit/bottom" </string>
+				<string> "drag_margin/h_enabled" </string>
+				<string> "drag_margin/v_enabled" </string>
+				<string> "smoothing/enable" </string>
+				<string> "smoothing/speed" </string>
+				<string> "drag_margin/left" </string>
+				<string> "drag_margin/top" </string>
+				<string> "drag_margin/right" </string>
+				<string> "drag_margin/bottom" </string>
+				<string> "feet" </string>
+				<string> "enabled" </string>
+				<string> "cast_to" </string>
+				<string> "layer_mask" </string>
+				<string> "type_mask" </string>
+				<string> "RayCast2D" </string>
+				<string> "TileMap" </string>
+				<string> "tile_set" </string>
+				<string> "cell/size" </string>
+				<string> "cell/quadrant_size" </string>
+				<string> "cell/custom_transform" </string>
+				<string> "cell/half_offset" </string>
+				<string> "cell/tile_origin" </string>
+				<string> "cell/y_sort" </string>
+				<string> "collision/use_kinematic" </string>
+				<string> "collision/friction" </string>
+				<string> "collision/bounce" </string>
+				<string> "occluder/light_mask" </string>
+				<string> "tile_data" </string>
+			</string_array>
+			<string> "node_count" </string>
+			<int> 7 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="201"> 				-1, -1, 0, 0, -1, 1, 1, 0, 0, 0, 0, 26, 2, -1, 23, 3, 1, 4, 2, 5, 3, 6, 1, 7, 4, 8, 4, 9, 5, 10, 6, 11, 6, 12, 7, 13, 8, 14, 1, 15, 5, 16, 5, 17, 1, 18, 1, 19, 9, 20, 10, 21, 7, 22, 11, 23, 11, 24, 12, 25, 13, 0, 1, 0, 31, 27, -1, 5, 1, 14, 28, 15, 29, 16, 30, 17, 25, 18, 0, 1, 0, 32, 32, -1, 6, 1, 19, 33, 20, 34, 2, 35, 1, 36, 5, 25, 21, 0, 1, 0, 37, 37, -1, 17, 38, 4, 39, 1, 40, 9, 41, 22, 42, 23, 43, 23, 44, 24, 45, 24, 46, 9, 47, 9, 48, 9, 49, 25, 50, 26, 51, 26, 52, 26, 53, 26, 25, 27, 0, 1, 0, 59, 54, -1, 7, 1, 28, 33, 29, 55, 9, 56, 30, 57, 4, 58, 31, 25, 32, 0, 0, 0, 60, 60, -1, 17, 1, 33, 9, 5, 61, 34, 62, 35, 63, 36, 64, 37, 65, 38, 66, 5, 67, 1, 68, 9, 69, 6, 70, 7, 7, 4, 8, 4, 71, 4, 72, 39, 25, 40, 0 </int_array>
+			<string> "variants" </string>
+			<array  len="41" shared="false">
+				<vector2> 512, 302 </vector2>
+				<bool> False </bool>
+				<resource  resource_type="Shape2D" path="local://1">  </resource>
+				<matrix32> 3.46154, -0, 0, 5, 3, 16 </matrix32>
+				<int> 1 </int>
+				<int> 0 </int>
+				<real> 1 </real>
+				<real> 0 </real>
+				<real> 15 </real>
+				<bool> True </bool>
+				<vector2> 0, 0 </vector2>
+				<real> -1 </real>
+				<resource  external="0">  </resource>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 0, -2 </vector2>
+				<resource  resource_type="SpriteFrames" path="local://3">  </resource>
+				<string> "walk" </string>
+				<color> 1, 0.96702, 1, 1 </color>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 3, 16 </vector2>
+				<vector2> 3.46154, 5 </vector2>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 1, 1 </vector2>
+				<int> -10000000 </int>
+				<int> 10000000 </int>
+				<real> 5 </real>
+				<real> 0.2 </real>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 3.00001, 15.5 </vector2>
+				<vector2> 0.9375, 1.01563 </vector2>
+				<vector2> 0, 50 </vector2>
+				<int> 15 </int>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+				<vector2> 32, -14 </vector2>
+				<resource  external="12">  </resource>
+				<vector2> 64, 64 </vector2>
+				<int> 16 </int>
+				<matrix32> 1, 0, 0, 1, 0, 0 </matrix32>
+				<int> 2 </int>
+				<int_array  len="16"> 					196604, -2147483647, 196605, -2147483647, 196606, -2147483647, 196607, -2147483647, 131072, -2147483647, 131073, -2147483647, 131074, -2147483647, 131075, -2147483647 </int_array>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
+			</array>
+			<string> "version" </string>
+			<int> 2 </int>
+		</dictionary>
+
+	</main_resource>
+</resource_file>
