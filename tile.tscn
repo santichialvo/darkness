@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=1]
+[gd_scene load_steps=7 format=1]
 
 [ext_resource path="res://assets/sprites/static/Tiles/caster.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/static/Tiles/caster2.png" type="Texture" id=2]
 
 [sub_resource type="OccluderPolygon2D" id=1]
 
@@ -12,6 +13,17 @@ polygon = Vector2Array( 15.837, -15.9737, 15.837, 16.0185, -15.8818, 16.0185, -1
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
+
+[sub_resource type="OccluderPolygon2D" id=4]
+
+closed = true
+cull_mode = 0
+polygon = Vector2Array( -16.0205, -15.1427, -15.7705, 15.6073, 16.4795, 15.6073 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -10.3077, -9.84127, 9.84615, 9.68254, -10.1538, 9.68254 )
 
 [node name="Node" type="Node"]
 
@@ -53,6 +65,46 @@ transform/scale = Vector2( 3.22077, 3.24203 )
 shape = SubResource( 2 )
 trigger = false
 _update_shape_index = 0
+__meta__ = { "_edit_lock_":true }
+
+[node name="box2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 60.75, 15.5 )
+texture = ExtResource( 2 )
+region = true
+region_rect = Rect2( 0, 0, 32, 32 )
+__meta__ = { "_edit_lock_":true }
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="box2"]
+
+occluder = SubResource( 4 )
+light_mask = 1
+__meta__ = { "_edit_lock_":true }
+
+[node name="StaticBody2D" type="StaticBody2D" parent="box2/LightOccluder2D"]
+
+transform/pos = Vector2( 0.2295, 0.232315 )
+transform/scale = Vector2( 0.5, 0.488281 )
+input/pickable = false
+shapes/0/shape = SubResource( 5 )
+shapes/0/transform = Matrix32( 3.25, 0, 0, 3.2256, 1, 0.768001 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = { "_edit_lock_":true }
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="box2/LightOccluder2D/StaticBody2D"]
+
+transform/pos = Vector2( 1, 0.768001 )
+transform/scale = Vector2( 3.25, 3.2256 )
+build_mode = 0
+polygon = Vector2Array( -10.3077, -9.84127, 9.84615, 9.68254, -10.1538, 9.68254 )
+shape_range = Vector2( 0, 0 )
+trigger = false
 __meta__ = { "_edit_lock_":true }
 
 

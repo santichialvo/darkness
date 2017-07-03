@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <resource_file type="PackedScene" subresource_count="21" version="2.1" version_name="Godot Engine v2.1.stable.official">
+	<ext_resource path="res://assets/sprites/static/Tiles/spot.png" type="Texture" index="15"></ext_resource>
+	<ext_resource path="res://assets/sprites/static/Tiles/light.png" type="Texture" index="14"></ext_resource>
+	<ext_resource path="res://assets/sprites/static/Tiles/bg.png" type="Texture" index="0"></ext_resource>
 	<ext_resource path="res://assets/sprites/animated/p1_walk01.tex" type="Texture" index="2"></ext_resource>
 	<ext_resource path="res://assets/sprites/animated/p1_walk02.tex" type="Texture" index="3"></ext_resource>
 	<ext_resource path="res://assets/sprites/animated/p1_walk03.tex" type="Texture" index="4"></ext_resource>
@@ -11,9 +14,6 @@
 	<ext_resource path="res://assets/sprites/animated/p1_walk09.tex" type="Texture" index="10"></ext_resource>
 	<ext_resource path="res://assets/sprites/animated/p1_walk10.tex" type="Texture" index="11"></ext_resource>
 	<ext_resource path="res://assets/sprites/animated/p1_walk11.tex" type="Texture" index="12"></ext_resource>
-	<ext_resource path="res://assets/sprites/static/Tiles/spot.png" type="Texture" index="15"></ext_resource>
-	<ext_resource path="res://assets/sprites/static/Tiles/light.png" type="Texture" index="14"></ext_resource>
-	<ext_resource path="res://assets/sprites/static/Tiles/bg.png" type="Texture" index="0"></ext_resource>
 	<ext_resource path="res://assets/scripts/player.gd" type="Script" index="1"></ext_resource>
 	<ext_resource path="res://tile_ocluder.xml" type="TileSet" index="13"></ext_resource>
 	<resource type="RectangleShape2D" path="local://1">
@@ -86,6 +86,7 @@
 				<string> "bg" </string>
 				<string> "transform/scale" </string>
 				<string> "texture" </string>
+				<string> "__meta__" </string>
 				<string> "Sprite" </string>
 				<string> "Player" </string>
 				<string> "input/pickable" </string>
@@ -96,7 +97,6 @@
 				<string> "collision/mask" </string>
 				<string> "collision/margin" </string>
 				<string> "script/script" </string>
-				<string> "__meta__" </string>
 				<string> "KinematicBody2D" </string>
 				<string> "frames" </string>
 				<string> "animation" </string>
@@ -163,16 +163,20 @@
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="295"> 				-1, -1, 0, 0, -1, 1, 1, 0, 0, 0, 0, 5, 2, -1, 3, 1, 1, 3, 2, 4, 3, 0, 0, 0, 16, 6, -1, 9, 7, 4, 8, 5, 9, 6, 10, 4, 11, 7, 12, 7, 13, 8, 14, 9, 15, 10, 0, 2, 0, 19, 5, -1, 5, 1, 11, 3, 12, 17, 13, 18, 14, 15, 15, 0, 2, 0, 20, 20, -1, 6, 1, 16, 3, 17, 21, 5, 22, 4, 23, 18, 15, 19, 0, 2, 0, 24, 24, -1, 17, 25, 7, 26, 4, 27, 20, 28, 21, 29, 22, 30, 22, 31, 23, 32, 23, 33, 20, 34, 20, 35, 20, 36, 24, 37, 25, 38, 25, 39, 25, 40, 25, 15, 26, 0, 0, 0, 41, 41, -1, 17, 1, 27, 42, 18, 43, 28, 44, 29, 45, 30, 46, 31, 47, 32, 48, 18, 49, 4, 50, 20, 51, 33, 52, 34, 11, 7, 12, 7, 53, 7, 54, 35, 15, 36, 0, 0, 0, 55, 55, -1, 23, 56, 37, 1, 38, 3, 39, 57, 20, 58, 4, 4, 40, 59, 41, 60, 33, 61, 42, 62, 33, 42, 18, 63, 34, 64, 43, 65, 44, 66, 18, 67, 18, 68, 7, 69, 20, 70, 45, 71, 46, 72, 47, 73, 7, 15, 48, 0, 7, 0, 5, 5, -1, 3, 3, 49, 4, 50, 15, 51, 0, 0, 0, 55, 74, -1, 22, 1, 52, 3, 39, 57, 20, 58, 4, 4, 40, 59, 41, 60, 33, 61, 42, 62, 33, 42, 18, 63, 34, 64, 43, 65, 44, 66, 18, 67, 18, 68, 7, 69, 20, 70, 45, 71, 46, 72, 47, 73, 7, 15, 53, 0, 9, 0, 5, 5, -1, 3, 3, 49, 4, 50, 15, 51, 0 </int_array>
+			<int_array  len="297"> 				-1, -1, 0, 0, -1, 1, 1, 0, 0, 0, 0, 6, 2, -1, 4, 1, 1, 3, 2, 4, 3, 5, 4, 0, 0, 0, 16, 7, -1, 9, 8, 5, 9, 6, 10, 7, 11, 5, 12, 8, 13, 8, 14, 9, 15, 10, 5, 11, 0, 2, 0, 19, 6, -1, 5, 1, 12, 3, 13, 17, 14, 18, 15, 5, 16, 0, 2, 0, 20, 20, -1, 6, 1, 17, 3, 18, 21, 6, 22, 5, 23, 19, 5, 20, 0, 2, 0, 24, 24, -1, 17, 25, 8, 26, 5, 27, 21, 28, 22, 29, 23, 30, 23, 31, 24, 32, 24, 33, 21, 34, 21, 35, 21, 36, 25, 37, 26, 38, 26, 39, 26, 40, 26, 5, 27, 0, 0, 0, 41, 41, -1, 17, 1, 28, 42, 19, 43, 29, 44, 30, 45, 31, 46, 32, 47, 33, 48, 19, 49, 5, 50, 21, 51, 34, 52, 35, 12, 8, 13, 8, 53, 8, 54, 36, 5, 37, 0, 0, 0, 55, 55, -1, 23, 56, 38, 1, 39, 3, 40, 57, 21, 58, 5, 4, 41, 59, 42, 60, 34, 61, 43, 62, 34, 42, 19, 63, 35, 64, 44, 65, 45, 66, 19, 67, 19, 68, 8, 69, 21, 70, 46, 71, 47, 72, 48, 73, 8, 5, 49, 0, 7, 0, 6, 6, -1, 3, 3, 50, 4, 51, 5, 52, 0, 0, 0, 55, 74, -1, 22, 1, 53, 3, 40, 57, 21, 58, 5, 4, 41, 59, 42, 60, 34, 61, 43, 62, 34, 42, 19, 63, 35, 64, 44, 65, 45, 66, 19, 67, 19, 68, 8, 69, 21, 70, 46, 71, 47, 72, 48, 73, 8, 5, 54, 0, 9, 0, 6, 6, -1, 3, 3, 50, 4, 51, 5, 52, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="54" shared="false">
+			<array  len="55" shared="false">
 				<vector2> 477, 283 </vector2>
 				<vector2> 383.727, 231.483 </vector2>
 				<vector2> 11, 6.57209 </vector2>
 				<resource  external="0">  </resource>
+				<dictionary  shared="false">
+					<string> "_edit_lock_" </string>
+					<bool> True </bool>
+				</dictionary>
 				<bool> False </bool>
 				<resource  resource_type="Shape2D" path="local://1">  </resource>
-				<matrix32> 1.44231, -0, 0, 2.22115, 1.25824, -0.0809848 </matrix32>
+				<matrix32> 1.09615, -0, 0, 1.86167, 0.285067, 0.377638 </matrix32>
 				<int> 1 </int>
 				<real> 0.08 </real>
 				<resource  external="1">  </resource>
@@ -181,15 +185,15 @@
 					<bool> True </bool>
 				</dictionary>
 				<vector2> 0, -2 </vector2>
-				<vector2> 0.4, 0.4 </vector2>
+				<vector2> 0.3, 0.3 </vector2>
 				<resource  resource_type="SpriteFrames" path="local://3">  </resource>
 				<string> "walk" </string>
 				<dictionary  shared="false">
 					<string> "_edit_lock_" </string>
 					<bool> True </bool>
 				</dictionary>
-				<vector2> 1.25824, -0.0809848 </vector2>
-				<vector2> 1.44231, 2.22115 </vector2>
+				<vector2> 0.285067, 0.377638 </vector2>
+				<vector2> 1.09615, 1.86167 </vector2>
 				<int> 0 </int>
 				<dictionary  shared="false">
 					<string> "_edit_lock_" </string>
@@ -213,7 +217,7 @@
 				<int> 2 </int>
 				<real> 1 </real>
 				<real> 0 </real>
-				<int_array  len="152"> 					196604, 1, 196605, 1, 196606, 1, 196607, 1, 131072, 1, 131073, 1, 131074, 1, 131075, 1, 262155, 0, 393210, 0, 393211, 0, 393212, 0, 393213, 0, 393214, 0, 393215, 0, 327680, 0, 327681, 0, 327682, 0, 327683, 0, 327684, 0, 327685, 0, 327686, 0, 327689, 0, 458750, 0, 393229, 0, 524286, 0, 458753, 0, 458754, 0, 458770, 0, 458771, 0, 458772, 0, 589822, 0, 524299, 0, 524308, 0, 655358, 0, 589825, 0, 589833, 0, 589844, 0, 720894, 0, 655367, 0, 655368, 0, 655369, 0, 655380, 0, 786430, 0, 786431, 0, 720896, 0, 720897, 0, 720898, 0, 720899, 0, 720900, 0, 720901, 0, 720902, 0, 720903, 0, 720904, 0, 720905, 0, 720906, 0, 720907, 0, 720908, 0, 720909, 0, 720916, 0, 851966, 0, 851967, 0, 786452, 0, 851988, 0, 917515, 0, 917524, 0, 983051, 0, 983052, 0, 983053, 0, 983054, 0, 983055, 0, 983056, 0, 983057, 0, 983058, 0, 983059, 0, 983060, 0 </int_array>
+				<int_array  len="240"> 					15, 0, 16, 0, 17, 0, 18, 0, 19, 0, 20, 0, 21, 0, 22, 0, 23, 0, 65550, 0, 65551, 0, 65559, 0, 196604, 0, 196605, 0, 196606, 0, 196607, 0, 131072, 0, 131073, 0, 131074, 0, 131075, 0, 131076, 1, 131079, 0, 131080, 0, 131081, 0, 131082, 0, 131083, 0, 131084, 0, 131085, 0, 131086, 0, 131087, 0, 131095, 0, 196612, 0, 196613, 1, 196631, 0, 262147, 0, 262155, 0, 262167, 0, 393210, 0, 393211, 0, 393212, 0, 393213, 0, 393214, 0, 393215, 0, 327680, 0, 327681, 0, 327682, 0, 327683, 0, 327684, 0, 327685, 0, 327686, 0, 327689, 0, 327701, 0, 327702, 0, 327703, 0, 458750, 0, 393229, 0, 393241, 0, 524286, 0, 458753, 0, 458754, 0, 458770, 0, 458771, 0, 458772, 0, 458773, 0, 458774, 0, 458775, 0, 458776, 0, 458777, 0, 589822, 0, 524299, 0, 524308, 0, 655358, 0, 589825, 0, 589833, 0, 589844, 0, 720894, 0, 655367, 0, 655368, 0, 655369, 0, 655380, 0, 786430, 0, 786431, 0, 720896, 0, 720897, 0, 720898, 0, 720899, 0, 720900, 0, 720901, 0, 720902, 0, 720903, 0, 720904, 0, 720905, 0, 720906, 0, 720907, 0, 720908, 0, 720909, 0, 720916, 0, 851966, 0, 851967, 0, 786452, 0, 851988, 0, 917515, 0, 917524, 0, 983051, 0, 983052, 0, 983053, 0, 983054, 0, 983055, 0, 983056, 0, 983057, 0, 983058, 0, 983059, 0, 983060, 0, 1114108, 0, 1114109, 0, 1114110, 0, 1048576, 0, 1048577, 0, 1048578, 0, 1048579, 0 </int_array>
 				<dictionary  shared="false">
 					<string> "_edit_lock_" </string>
 					<bool> True </bool>
